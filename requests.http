@@ -1,0 +1,28 @@
+GET http://localhost:5555/personas
+
+###
+GET http://localhost:5555/personas/1
+
+###
+POST http://localhost:5555/personas
+Content-Type: application/json
+
+{
+  "nombre": "Juan",
+  "apellido": "Perez",
+  "email": "a@perez.com"
+}
+
+###
+PUT http://localhost:5555/personas/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "José",
+  "apellido": "Perez",
+  "email": "juan@perez.com"
+}
+
+###
+DELETE http://localhost:5555/personas/1
